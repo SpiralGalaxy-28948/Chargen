@@ -61,7 +61,8 @@ function exportText()
 
 function d()
 {
-	return randomIntFromInterval(1,6);
+	//return randomIntFromInterval(1,6);
+	return prompt("Enter 1d6 roll",1);
 }
 
 function randomIntFromInterval(min, max) { // min and max included
