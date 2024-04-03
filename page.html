@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traveller (Cepheus Engine) Basic Character Generator</title>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src='seedrandom.min.js'></script>
+    <script type="text/javascript" language="javascript" src="jobs.js?9"></script>
+    <script type="text/javascript" language="javascript" src="skilltree.js?9"></script>
+    <script type="text/javascript" language="javascript" src="chargen.js?9"></script>
+    <script>
+    function showNotes()
+    {
+        $( "#dialog" ).dialog({width:600});
+    }
+
+   
+   </script>
+</head>
+<body>
+<h3>CE Generator <a href="javascript:showNotes();">Show Generator Notes</a></h3>
+
+<table>
+    <tr><td style="vertical-align: top">
+
+<table width="800" style="table-layout:fixed;" class="char" id="char">
+
+    <tr><th>UPP</th><td colspan="3"><span id="upp">777777</span> ( Str: <span id="str">7</span> Dex: <span id="dex">7</span> End: <span id="end">7</span> Int: <span id="int">7</span> Edu: <span id="edu">7</span> Soc: <span id="soc">7</span> )</td></tr>
+    <tr><th>Age</th><td id="age">18</td><th>Total Terms</th><td id="totalterms">0</td></tr>
+    <tr id="cr1"><th>Career 1</th><td id="c1"></td><th>Rank</th><td id="r1"></td></tr>
+    <tr id="cr2" class="hide"><th>Career 2</th><td id="c2"></td><th>Rank</th><td id="r2"></td></tr>
+    <tr id="cr3" class="hide"><th>Career 3</th><td id="c3"></td><th>Rank</th><td id="r3"></td></tr>
+    <tr id="cr4" class="hide"><th>Career 4</th><td id="c4"></td><th>Rank</th><td id="r4"></td></tr>
+    <tr id="cr5" class="hide"><th>Career 5</th><td id="c5"></td><th>Rank</th><td id="r5"></td></tr>
+    <tr id="cr6" class="hide"><th>Career 6</th><td id="c6"></td><th>Rank</th><td id="r6"></td></tr>
+    <tr id="cr7" class="hide"><th>Career 7</th><td id="c7"></td><th>Rank</th><td id="r7"></td></tr>
+    <tr id="cr8" class="hide"><th>Career 8</th><td id="c8"></td><th>Rank</th><td id="r8"></td></tr>
+    <tr id="cr9" class="hide"><th>Career 9</th><td id="c9"></td><th>Rank</th><td id="r9"></td></tr>
+
+
+    <tr><th>Skills</th><td colspan="3" id="skills"></td></tr>
+    <tr><th>Cash</th><td id="cash"></td><th>Pension</th><td id="pension"></td></tr>
+    <tr><th>Benefits</th><td id="benefits" colspan="3"></td></tr>
+</table>
+
+<br>
+<div id="title"></div>
+<div id="actions">
+    &bull; <a href="javascript:roll_attributes(false);">Generate Attributes (Standard 2d6)</a>
+    &bull; <a href="javascript:roll_attributes(true);">Generate Attributes (3d6 Drop Lowest)</a>
+    &bull; <a href="javascript:dobackground();">Accept Attributes</a><br>
+</div>
+<div id="message"></div>
+<form>
+    <div id="formtest"></div>
+</form>
+<br>
+<div id="infotable"></div>
+<pre id="log"></pre>
+
+</td><td>&nbsp; &nbsp;</td><td style="vertical-align: top;">
+
+</td></tr></table>
+<h4>History</h4>
+<pre  id="history" >
+
+</pre>
+<div id="exportModal" title="Text Export" style="display:none">
+    <p></p><a href="javascript:download();">Export To Text File</a></p>
+    <textarea id="exportData" cols="80" rows="25" style="font-size: 10pt; font-family: 'Courier';"></textarea>
+</div>
+
+<div id="dialog" title="Character Generator Notes" style="display:none;" >
+    <p>A few notes.</p>
+    <p>This is Basically Alpha Software. It will likely have bugs.</p>
+    <p>If you are looking for something that generates a lot of characters, then look at <a href="http://members.ozemail.com.au/~jonoreita/SupplementOne/Cepheus_Engine_1001_characters.html">1,000,001 characters</a>.
+    It can generate a lot characters fast. This generator is for those players that want to make all the choices for themselves.</p>
+    <p>I decided against doing homeworld selection, but I decided to allow you to select skills from the various trade codes and planetary descriptions.
+    This means that you can select skills like Gun Combat, Melee Combat, and Zero-G at zero. I'm not sure why they bothered in the rulebook things like Animal-0 appear both
+        in the Primary Education list and Trade Codes for Agricultural, Garden, and Poor. Why bother at all. </p>
+    <p>The Cascade List for Vehicle bothered me. There was an Aircraft and Watercraft Cascade but not one for Ground Vehicles, so I add one.
+    This is only important to me since if you look at the cascade skill rule, if you have a single rank in speciality then you get zero rank in all the other skills in the cascade.
+    If you left it like this, then technically if you got Wheel Vehicle one, you got Aircraft (and all the skills under it) at zero???
+        Didn't make sense. So by creating the Ground Vehicle one, you only get the skills at zero for the lowest level cascade you are in. So Wheel Vehicle-1 gives you Tracked Vehicle-0, and Mole-0.
+    I've read that the Moon Toad Publishing has this corrected, but since I only have the SRD, I went with what I thought here.
+    </p>
+    <p>There were some missing skills of Prospecting and Perception. Moon Toad Publishing says they added them to the list, but if you look at the Comments on the page of the SRD on DrivethruRPG, it says that they should be replaced with
+        Physical Sciences and Recon. Which is what I did. Not sure why Moon Toad went the other way. At any rate, I wanted to point out the differences.
+    <p>It will let you do more than 7 Terms. I decided to leave it up to people if they wanted to stop</p>
+    <p>As I drew some inspiration from the <a href="http://traveller.chromeblack.com/files/mtpcgen.html" target="_blank">Megatraveller Character Generator</a>, I decided to also allow you to bypass or retry on a survival roll or enlistment or reenlistment.
+    Although, I do make a note of it in the running history.</p>
+   <p>Lastly, This page uses several Jscript Libraries to do some heavy lifting for me. So I'm not sure if you can save the page and things will still work for you.
+   However here is a link to download the page with the all the files <a href="ce_chargen.zip">Download Zip</a> </p>
+</div>
+
+</body>
+
+<style>
+    .hide
+    {
+        display:none;
+    }
+    table.skills tr:nth-child(odd) td
+    {
+        background-color: lightgray;
+    }
+
+    table.skills tr th
+    {
+        background-color: white;
+    }
+
+    table.char
+    {
+        border: #000000 thin solid;
+
+    }
+
+    table.char th
+    {
+        text-align:left;
+        vertical-align:bottom;
+        background-color: lightgray;
+        color: black;
+        font-weight: bold;
+        padding: 3px; border: black thin solid;
+    }
+
+    table.char td
+    {
+        text-align:left;
+        vertical-align:bottom;
+        background-color: white;
+        border: black thin dotted;
+        color: black;
+        padding-left: 10px;
+    }
+    th {
+        text-align:left;
+        vertical-align:bottom;
+    }
+</style>
+
+</html>
