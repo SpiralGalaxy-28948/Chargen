@@ -61,7 +61,7 @@ var jobs = {
         "qual" : { attr : "str", val: 7},
         "survival" : { attr : "end", val: 7},
         "commission" : { attr : "int", val: 4},
-        "advancement" : { attr : "END", val: 8},
+        "advancement" : { attr : "end", val: 8},
         "re-enlist" : 3,
         "skillperterm" : 2,
         "skills": {
