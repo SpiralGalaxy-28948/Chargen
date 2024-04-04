@@ -68,7 +68,7 @@ function d1()
 function d()
 {
 	let r = d1();
-	return Number(prompt("[1]Enter 1d6 roll",r));
+	return parseInt(prompt("[1]Enter 1d6 roll",r),10);
 }
 
 function randomIntFromInterval(min, max) { // min and max included
