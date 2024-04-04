@@ -67,7 +67,7 @@ function d1()
 
 function d()
 {
-	return prompt("Enter 1d6 roll",1);
+	return number(prompt("Enter 1d6 roll",1));
 }
 
 function randomIntFromInterval(min, max) { // min and max included
@@ -94,7 +94,7 @@ function d2(droplowest = false)
 	// console.log(rolls);
 	let total = +rolls[0] + +rolls[1];
 	//return +rolls[0] + +rolls[1];
-	return prompt("2d6 or ",total)
+	return number(prompt("2d6 or ",total));
 
 }
 
