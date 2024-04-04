@@ -59,9 +59,14 @@ function exportText()
 }
 
 
+function d1()
+{
+	return randomIntFromInterval(1,6);
+	//return prompt("Enter 1d6 roll",1);
+}
+
 function d()
 {
-	//return randomIntFromInterval(1,6);
 	return prompt("Enter 1d6 roll",1);
 }
 
@@ -75,20 +80,21 @@ function d2(droplowest = false)
 	let rolls = [];
 	if(droplowest)
 	{
-		rolls[0] = d();
-		rolls[1] = d();
-		rolls[2] = d();
+		rolls[0] = d1();
+		rolls[1] = d1();
+		rolls[2] = d1();
 		rolls.sort();
 		rolls.reverse();
 	}
 	else
 	{
-		rolls[0] = d();
-		rolls[1] = d();
+		rolls[0] = d1();
+		rolls[1] = d1();
 	}
 	// console.log(rolls);
-
-	return +rolls[0] + +rolls[1];
+	let total = +rolls[0] + +rolls[1];
+	//return +rolls[0] + +rolls[1];
+	return prompt("2d6 or ",total)
 
 }
 
