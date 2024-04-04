@@ -102,6 +102,7 @@ var skilltree = {
     "Gambling":1,
     "Gravitics":1,
     "Jack-of-All-Trades":1,
+    "Investigate":1,
     "Leadership":1,
     "Linguistics":1,
     "Liaison":1,
