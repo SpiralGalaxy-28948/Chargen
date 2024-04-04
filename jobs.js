@@ -71,7 +71,7 @@ var jobs = {
             "Advanced Education" : {1 :"Medicine", 2: "Navigation", 3 : "Engineering", 4 : "Computer", 5 : "Piloting", 6 : "Jack-of-All-Trades"}
         },
         "rank" : {0: "Scout",1 : "Senior",2:"Supervisor",3:"Mission Specialist",4:"Senior Mission Specialist",5:"Mission Chief",6:"Operations Chief"},
-        "rankskills" : {0: "Survival",1 : "Piloting",2:"",3:"Tatics",4:"",5:"",6:""},
+        "rankskills" : {0: "Survival",1 : "Piloting",2:"",3:"Tactics",4:"",5:"",6:""},
         "cash" : {1 : "1000",2 : "5000",3 : "10000",4 : "10000",5 : "20000",6 : "50000",7 : "50000"},
         "benefits" : {1 : "Low Passage",2 : "+2 int",3 : "+1 edu",4 : "weapon",5 : "weapon",6 : "high passage",7 : "envoy club"},
     },
