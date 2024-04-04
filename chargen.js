@@ -92,7 +92,7 @@ function d2(droplowest = false)
 		rolls[0] = d1();
 		rolls[1] = d1();
 	}
-	// console.log(rolls);
+	console.log(rolls);
 	let total = +rolls[0] + +rolls[1];
 	//return +rolls[0] + +rolls[1];
 	return Number(prompt("2d6 or ",total));
