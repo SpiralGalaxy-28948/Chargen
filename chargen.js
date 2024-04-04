@@ -210,7 +210,8 @@ function dobackground() {
 	let msg = 'UPP :  ' + $('#upp').html() + ' Accepted';
 	addToHistory(msg);
 	let attr = +attrbonus('edu');
-	let max = 3 + attr;
+	//let max = 3 + attr;
+	let max = 1;
 	console.log(attr, max);
 	char.skillstodo = max;
 	char.step = 'background';
