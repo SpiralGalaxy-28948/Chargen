@@ -67,7 +67,7 @@ var jobs = {
         "skills": {
             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"Gun Combat"},
             "Service Skills" : {1: "Vehicle",2: "Zero-G",3:"Mechanical",4:"Mining",5:"Comms",6:"Mining"},
-            "Specialist" : {1 :"Vehicl;e", 2: "Mechinical", 3 : "Electronics", 4 : "Investigate", 5 : "Gunnery", 6 : "Medicine"},
+            "Specialist" : {1 :"Vehicl;e", 2: "Mechanics", 3 : "Electronics", 4 : "Investigate", 5 : "Gunnery", 6 : "Medicine"},
             "Advanced Education" : {1 :"Medicine", 2: "Navigation", 3 : "Engineering", 4 : "Computer", 5 : "Piloting", 6 : "Jack-of-All-Trades"}
         },
         "rank" : {0: "Scout",1 : "Senior",2:"Supervisor",3:"Mission Specialist",4:"Senior Mission Specialist",5:"Mission Chief",6:"Operations Chief"},
