@@ -526,7 +526,7 @@ var jobs = {
         "rankskills" : {0: "Aircraft",1 : "",2:"",3:"Leadership",4:"",5:"",6:""},
         "cash" : {1 : "1000",2 : "2000",3 : "5000",4 : "10000",5 : "10000",6 : "25000",7 : "50000"},
         "benefits" : {1 : "Low Passage",2 : "+1 edu",3 : "Weapon",4 : "Weapon",5 : "High Passage",6 : "+1 soc",7 : "Explorers' Society"},
-    },
+    }
 
 
 
