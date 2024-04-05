@@ -76,7 +76,7 @@ function randomIntFromInterval(min, max) { // min and max included
 	return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function d2(droplowest = false)
+function d2(droplowest = false, message = "")
 {
 	let rolls = [];
 	if(droplowest)
@@ -95,7 +95,7 @@ function d2(droplowest = false)
 	console.log(rolls);
 	let total = +rolls[0] + +rolls[1];
 	//return +rolls[0] + +rolls[1];
-	return Number(prompt("2d6 or ",total));
+	return Number(prompt("2d6 or roll your own "+message,total));
 
 }
 
@@ -1073,7 +1073,7 @@ function reenlist() {
 function attemptReenlist() {
 
 	let career = char.careers[char.careernum]['career'];
-	let roll = d2();
+	let roll = d2(false,"Re-enlistment");
 	let val = jobs[career]["re-enlist"];
 	if (roll >= val)
 	{
