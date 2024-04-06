@@ -1,7 +1,7 @@
 var skilltree = {
     "Admin":1,
     "Advocate":1,
-
+    "Agriculture":1,
     "Animals":{"Farming":1,
     "Riding":1,
     "Survival":1,

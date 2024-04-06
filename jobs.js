@@ -92,7 +92,7 @@ var jobs = {
             "Advanced Education" : {1 :"Medicine", 2: "Security", 3 : "Admin", 4 : "Computer", 5 : "Leadership", 6 : "Tactics"}
         },
         "rank" : {0: "Agent",1 : "Special Agent",2:"Supervisor",3:"Asst Project Lead",4:"Project Lead",5:"Assistant Director",6:"Director"},
-        "rankskills" : {0: "Streetwise",1 : "",2:"",3:"",4:"Admin",5:"",6:""},
+        "rankskills" : {0: "Investigate",1 : "",2:"",3:"",4:"Admin",5:"",6:""},
         "cash" : {1 : "1000",2 : "5000",3 : "10000",4 : "10000",5 : "20000",6 : "50000",7 : "50000"},
         "benefits" : {1 : "Weapon",2 : "Low Passage",3 : "Weapon",4 : "+1 int",5 : "+1 edu",6 : "+1 soc",7 : "+1 soc"},
     },
@@ -118,64 +118,64 @@ var jobs = {
     // },
 
     "Roughneck": {
-        'explain' : 'Individual that explores asteroid belts in search of mineral deposits and salvageable material for profit.',
-        "qual" : { attr : "int", val: 4},
-        "survival" : { attr : "dex", val: 7},
-        "commission" : { attr : "", val: 0},
-        "advancement" : { attr : "", val: 0},
-        "re-enlist" : 5,
-        "skillperterm" : 2,
+        'explain' : 'Heavy equipment and mining specialist.',
+        "qual" : { attr : "dex", val: 8},
+        "survival" : { attr : "int", val: 6},
+        "commission" : { attr : "str", val: 8},
+        "advancement" : { attr : "end", val: 7},
+        "re-enlist" : 7,
+        "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Zero-G",5:"Melee Combat",6:"Gambling"},
-            "Service Skills" : {1: "Comms",2: "Demolitions",3:"Gun Combat",4:"Gunnery",5:"Physical Sciences",6:"Piloting"},
-            "Specialist" : {1 :"Zero-G", 2: "Computer", 3 : "Electronics", 4 : "Physical Sciences", 5 : "Sciences", 6 : "Vehicle"},
-            "Advanced Education" : {1 :"Advocate", 2: "Engineering", 3 : "Medicine", 4 : "Navigation", 5 : "Comms", 6 : "Tactics"}
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Gambling",5:"Zero-G",6:"Brawling"},
+            "Service Skills" : {1: "Zero-G",2: "Mining",3:"Loader",4:"Demolitions",5:"Comms",6:"Ground Vehicle"},
+            "Specialist" : {1 :"Streetwise", 2: "Electronic", 3 : "Ground Vehicle", 4 : "Mechanical", 5 : "Mining", 6 : "Admin"},
+            "Advanced Education" : {1 :"Navigation", 2: "Medicine", 3 : "Electronics", 4 : "Computer", 5 : "Engineering", 6 : "Jack-of-all-Trades"}
         },
-        "rank" : {0: "",1 : "",2:"",3:"",4:"",5:"",6:""},
-        "rankskills" : {0: "Zero-G",1 : "",2:"",3:"",4:"",5:"",6:""},
-        "cash" : {1 : "1000",2 : "5000",3 : "5000",4 : "5000",5 : "10000",6 : "20000",7 : "50000"},
-        "benefits" : {1 : "Low Passage",2 : "+1 int",3 : "Weapon",4 : "Mid Passage",5 : "1d6 Ship Shares",6 : "High Passage",7 : ""},
+        "rank" : {0: "Gofer",1 : "Floorhand",2:"Asst Driller",3:"Driller",4:"Toolpusher",5:"Supervisor",6:"General Mgr"},
+        "rankskills" : {0: "Zero-G",1 : "Mining",2:"",3:"",4:"Mechanics",5:"",6:"Admin"},
+        "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
+        "benefits" : {1 : "Middle Passage",2 : "Middle Passage",3 : "Weapon",4 : "High Passage",5 : "+1 edu",6 : "+1 int",7 : "High Passage"},
     },
 
 
     "Exec": {
-        'explain' : 'Official in a government department, charged with following the details of administrative process.',
-        "qual" : { attr : "soc", val: 6},
-        "survival" : { attr : "edu", val: 4},
-        "commission" : { attr : "soc", val: 5},
-        "advancement" : { attr : "int", val: 8},
-        "re-enlist" : 5,
+        'explain' : 'Corporate Executive. Tied to a conglomerate and still looking for profit.',
+        "qual" : { attr : "soc", val: 10},
+        "survival" : { attr : "edu", val: 3},
+        "commission" : { attr : "edu", val: 5},
+        "advancement" : { attr : "int", val: 10},
+        "re-enlist" : 4,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 dex",2: "+1 end",3:"+1 int",4:"+1 edu",5:"Athletics",6:"Carousing"},
-            "Service Skills" : {1: "Admin",2: "Computer",3:"Carousing",4:"Bribery",5:"Leadership",6:"Vehicle"},
-            "Specialist" : {1 :"Admin", 2: "Computer", 3 : "Recon", 4 : "Leadership", 5 : "Steward", 6 : "Vehicle"},
-            "Advanced Education" : {1 :"Advocate", 2: "Computer", 3 : "Liaison", 4 : "Linguistics", 5 : "Medicine", 6 : "Admin"}
+            "Personal Development" : {1: "Streetwise",2: "+1 int",3:"+1 edu",4:"+1 soc",5:"Carousing",6:"Bribery"},
+            "Service Skills" : {1: "Gambling",2: "Admin",3:"Carousing",4:"Leadership",5:"Bribery",6:"Forgery"},
+            "Specialist" : {1 :"Broker", 2: "Liason", 3 : "Vehicle", 4 : "Broker", 5 : "Computer", 6 : "Leadership"},
+            "Advanced Education" : {1 :"Medical", 2: "Computer", 3 : "Admin", 4 : "Liason", 5 : "Leader", 6 : "Jack-of-all-Trades"}
         },
-        "rank" : {0: "Assistant",1 : "Clerk",2:"Supervisor",3:"Manager",4:"Chief",5:"Director",6:"Minister"},
-        "rankskills" : {0: "Admin",1 : "",2:"",3:"",4:"Advocate",5:"",6:""},
+        "rank" : {0: "Manager", 1: "VP",2 : "Senior VP",3:"Exec VP",4:"Senior Exec VP",5:"Director",6:"President"},
+        "rankskills" : {0: "",1 : "Broker",2:"",3:"",4:"Advocate",5:"",6:""},
         "cash" : {1 : "1000",2 : "5000",3 : "10000",4 : "10000",5 : "20000",6 : "50000",7 : "50000"},
-        "benefits" : {1 : "Low Passage",2 : "+1 edu",3 : "+1 int",4 : "Mid Passage",5 : "Mid Passage",6 : "High Passage",7 : "+1 soc"},
+        "benefits" : {1 : "High Passage",2 : "+1 edu",3 : "+1 int",4 : "High Passage",5 : "Star Envoy Club",6 : "High Passage",7 : "+1 soc"},
     },
 
     "Colonist": {
-        'explain' : 'Individual that moves to a new world or settles in a new planetary colony.',
+        'explain' : 'A new life awaits you in the off world colonies.',
         "qual" : { attr : "end", val: 5},
-        "survival" : { attr : "dex", val: 6},
-        "commission" : { attr : "edu", val: 7},
+        "survival" : { attr : "end", val: 6},
+        "commission" : { attr : "int", val: 7},
         "advancement" : { attr : "edu", val: 6},
         "re-enlist" : 5,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"Athletics",6:"Gun Combat"},
-            "Service Skills" : {1: "Mechanics",2: "Gun Combat",3:"Animals",4:"Electronics",5:"Survival",6:"Vehicle"},
-            "Specialist" : {1 :"Athletics", 2: "Gravitics", 3 : "Jack-of-All-Trades", 4 : "Engineering", 5 : "Animals", 6 : "Vehicle"},
-            "Advanced Education" : {1 :"Advocate", 2: "Linguistics", 3 : "Medicine", 4 : "Liaison", 5 : "Admin", 6 : "Animals"}
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"Brawling",6:"Gun Combat"},
+            "Service Skills" : {1: "Mechanics",2: "Comms",3:"Agriculture",4:"Electronics",5:"Survival",6:"Vehicle"},
+            "Specialist" : {1 :"Loader", 2: "Carousing", 3 : "Jack-of-All-Trades", 4 : "Engineering", 5 : "Agriculture", 6 : "Vehicle"},
+            "Advanced Education" : {1 :"Medicine", 2: "Agriculture", 3 : "Jack-of-All-Trades", 4 : "Liaison", 5 : "Admin", 6 : "Leadership"}
         },
-        "rank" : {0: "Citizen",1 : "District Leader",2:"District Delegate",3:"Council Advisor",4:"Councilor",5:"Lieutenant Governor",6:"Governor"},
-        "rankskills" : {0: "Survival",1 : "",2:"",3:"Liaison",4:"",5:"",6:""},
-        "cash" : {1 : "1000",2 : "5000",3 : "5000",4 : "5000",5 : "10000",6 : "20000",7 : "50000"},
-        "benefits" : {1 : "Low Passage",2 : "+1 int",3 : "Weapon",4 : "Mid Passage",5 : "Mid Passage",6 : "High Passage",7 : "+1 soc"},
+        "rank" : {0: "Colonist",1 : "Team Leader",2:"Supervisor",3:"Dept Chief",4:"Asst Ops Manager",5:"Ops Manager",6:"Colony Chief Administrator"},
+        "rankskills" : {0: "Survival",1 : "",2:"",3:"Liaison",4:"",5:"",6:"Admin"},
+        "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
+        "benefits" : {1 : "Mid Passage",2 : "+1 int",3 : "Weapon",4 : "Mid Passage",5 : "Mid Passage",6 : "High Passage",7 : "+1 soc"},
     },
 
 
@@ -242,43 +242,43 @@ var jobs = {
 
     "Ranger": {
         'explain' : 'A wilderness and survival expert specialising in the environments found on habitable worlds. Supports missions where planetary knowledge is required for example exploratory expeditions, search and rescue and leisure safaris',
-        "qual" : { attr : "end", val: 5},
-        "survival" : { attr : "str", val: 8},
-        "commission" : { attr : "", val: 0},
-        "advancement" : { attr : "", val: 0},
-        "re-enlist" : 6,
-        "skillperterm" : 2,
+        "qual" : { attr : "end", val: 9},
+        "survival" : { attr : "str", val: 6},
+        "commission" : { attr : "int", val: 5},
+        "advancement" : { attr : "end", val: 6},
+        "re-enlist" : 5,
+        "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"Athletics",6:"Gun Combat"},
-            "Service Skills" : {1: "Mechanics",2: "Gun Combat",3:"Melee Combat",4:"Recon",5:"Survival",6:"Vehicle"},
-            "Specialist" : {1 :"Admin", 2: "Comms", 3 : "Electronics", 4 : "Recon", 5 : "Animals", 6 : "Vehicle"},
-            "Advanced Education" : {1 :"Advocate", 2: "Linguistics", 3 : "Medicine", 4 : "Liaison", 5 : "Tactics", 6 : "Animals"}
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"Gun Combat",6:"Blade Combat"},
+            "Service Skills" : {1: "Gun Combat",2: "Agriculture",3:"Survival",4:"Recon",5:"Ground Vehicle",6:"Survival"},
+            "Specialist" : {1 :"Mechanics", 2: "Electronics", 3 : "Comms", 4 : "Recon", 5 : "Ground Vehicle", 6 : "Survival"},
+            "Advanced Education" : {1 :"Medicine", 2: "Computer", 3 : "Jack-of-All-Trades", 4 : "Leadership", 5 : "Tactics", 6 : "Mechanics"}
         },
-        "rank" : {0: "",1 : "",2:"",3:"",4:"",5:"",6:""},
+        "rank" : {0: "Ranger",1 : "Assistant Team Lead",2:"Team Lead",3:"Deputy Chief",4:"Chief",5:"Area Superintendent",6:"Commander"},
         "rankskills" : {0: "Survival",1 : "",2:"",3:"",4:"",5:"",6:""},
-        "cash" : {1 : "1000",2 : "5000",3 : "10000",4 : "20000",5 : "20000",6 : "50000",7 : "1000000"},
-        "benefits" : {1 : "Low Passage",2 : "+1 int",3 : "Weapon",4 : "High Passage",5 : "1D6 Ship Shares",6 : "High Passage",7 : ""},
+        "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
+        "benefits" : {1 : "Mid Passage",2 : "+1 int",3 : "Weapon",4 : "Weapon",5 : "+1 dex",6 : "+2 str",7 : "High Passage"},
     },
 
 
     "Marine": {
-        'explain' : 'Member of an interstellar armed military force trained to serve in a variety of environments, often carried on board starships as an adjunct to an interstellar navy. Also known as the space marines.',
-        "qual" : { attr : "int", val: 6},
+        'explain' : 'The Colonial Marines. An elite rapid reaction force trained for duty across the surveyed worlds.',
+        "qual" : { attr : "int", val: 4},
         "survival" : { attr : "end", val: 6},
         "commission" : { attr : "edu", val: 6},
-        "advancement" : { attr : "soc", val: 7},
+        "advancement" : { attr : "edu", val: 6},
         "re-enlist" : 6,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"Melee Combat"},
-            "Service Skills" : {1: "Comms",2: "Demolitions",3:"Gun Combat",4:"Gunnery",5:"Melee Combat",6:"Battle Dress"},
-            "Specialist" : {1 :"Electronics", 2: "Gun Combat", 3 : "Melee Combat", 4 : "Survival", 5 : "Recon", 6 : "Vehicle"},
-            "Advanced Education" : {1 :"Advocate", 2: "Computer", 3 : "Gravitics", 4 : "Medicine", 5 : "Navigation", 6 : "Tactics"}
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Gambling",5:"Brawling",6:"Blade Combat"},
+            "Service Skills" : {1: "Ground Vehicle",2: "Comms",3:"Gun Combat",4:"Survival",5:"Gun Combat",6:"Zero-G"},
+            "Specialist" : {1 :"Vehicle", 2: "Mechanics", 3 : "Electronics", 4 : "Demolitions", 5 : "Recon", 6 : "Heavy Weapons"},
+            "Advanced Education" : {1 :"Medicine", 2: "Security", 3 : "Tactics", 4 : "Computer", 5 : "Leader", 6 : "Admin"}
         },
-        "rank" : {0: "Trooper",1 : "Lieutenant",2:"Captain",3:"Major",4:"Lt Colonel",5:"Colonel",6:"Brigadier"},
-        "rankskills" : {0: "Zero-G",1 : "",2:"",3:"Tactics",4:"",5:"",6:""},
-        "cash" : {1 : "1000",2 : "5000",3 : "10000",4 : "10000",5 : "20000",6 : "50000",7 : "50000"},
-        "benefits" : {1 : "Low Passage",2 : "+1 edu",3 : "Weapon",4 : "Mid Passage",5 : "+1 soc",6 : "High Passage",7 : "Explorers' Society"},
+        "rank" : {0: "Private",1 : "Lieutenant",2:"Captain",3:"Major",4:"Lt Colonel",5:"Colonel",6:"Brigadier"},
+        "rankskills" : {0: "Gun Combat",1 : "Zero-G",2:"",3:"",4:"",5:"Tactics",6:""},
+        "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
+        "benefits" : {1 : "Mid Passage",2 : "+1 soc",3 : "+1 edu",4 : "Weapon",5 : "Star Envoy Club",6 : "High Passage",7 : "+2 edu"},
     },
 
     // "Maritime Defense": {
@@ -324,7 +324,7 @@ var jobs = {
 
 
     "Military Spacer": {
-        'explain' : 'Member of an interstellar armed military force that conducts military operations in interplanetary or interstellar space. Also known as the space navy.',
+        'explain' : 'Patrolling space to defend the off-world colonies.',
         "qual" : { attr : "int", val: 6},
         "survival" : { attr : "int", val: 5},
         "commission" : { attr : "soc", val: 7},
@@ -332,34 +332,34 @@ var jobs = {
         "re-enlist" : 5,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"Melee Combat"},
-            "Service Skills" : {1: "Comms",2: "Engineering",3:"Gun Combat",4:"Gunnery",5:"Melee Combat",6:"Vehicle"},
-            "Specialist" : {1 :"Gravitics", 2: "Jack-of-All-Trades", 3 : "Melee Combat", 4 : "Navigation", 5 : "Leadership", 6 : "Piloting"},
-            "Advanced Education" : {1 :"Advocate", 2: "Computer", 3 : "Engineering", 4 : "Medicine", 5 : "Navigation", 6 : "Tactics"}
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"+1 soc"},
+            "Service Skills" : {1: "Zero-G",2: "Computer",3:"Loader",4:"Gunnery",5:"Brawling",6:"Gun Combat"},
+            "Specialist" : {1 :"Gunnery", 2: "Mechanics", 3 : "Electronics", 4 : "Engineering", 5 : "Leadership", 6 : "Comms"},
+            "Advanced Education" : {1 :"Medicine", 2: "Navigation", 3 : "Engineering", 4 : "Computer", 5 : "Pilot", 6 : "Admin"}
         },
-        "rank" : {0: "Starman",1 : "Midshipman",2:"Lieutenant",3:"Lt Commander",4:"Commander",5:"Captain",6:"Commodore"},
-        "rankskills" : {0: "Zero-G",1 : "",2:"",3:"Tactics",4:"",5:"",6:""},
-        "cash" : {1 : "1000",2 : "5000",3 : "10000",4 : "10000",5 : "20000",6 : "50000",7 : "50000"},
+        "rank" : {0: "Private",1 : "PFC",2:"Corporal",3:"Sgt",4:"Staff Sgt",5:"Tech Sgt",6:"Master Sgt"},
+        "rankskills" : {0: "Zero-G",1 : "",2:"",3:"",4:"Tactics",5:"",6:""},
+        "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
         "benefits" : {1 : "Low Passage",2 : "+1 edu",3 : "Weapon",4 : "Mid Passage",5 : "+1 soc",6 : "High Passage",7 : "Explorers' Society"},
     },
     "Commercial Spacer": {
-        'explain' : 'Member of an interstellar armed military force that conducts military operations in interplanetary or interstellar space. Also known as the space navy.',
-        "qual" : { attr : "int", val: 6},
+        'explain' : 'The Merchant (Space) Navy',
+        "qual" : { attr : "int", val: 4},
         "survival" : { attr : "int", val: 5},
-        "commission" : { attr : "soc", val: 7},
-        "advancement" : { attr : "edu", val: 6},
-        "re-enlist" : 5,
+        "commission" : { attr : "int", val: 5},
+        "advancement" : { attr : "edu", val: 8},
+        "re-enlist" : 4,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"Melee Combat"},
-            "Service Skills" : {1: "Comms",2: "Engineering",3:"Gun Combat",4:"Gunnery",5:"Melee Combat",6:"Vehicle"},
-            "Specialist" : {1 :"Gravitics", 2: "Jack-of-All-Trades", 3 : "Melee Combat", 4 : "Navigation", 5 : "Leadership", 6 : "Piloting"},
-            "Advanced Education" : {1 :"Advocate", 2: "Computer", 3 : "Engineering", 4 : "Medicine", 5 : "Navigation", 6 : "Tactics"}
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 str",5:"Brawling",6:"Zero-G"},
+            "Service Skills" : {1: "Comms",2: "Bribery",3:"Gun Combat",4:"Loader",5:"Broker",6:"Vehicle"},
+            "Specialist" : {1 :"Zero-G", 2: "Mechanics", 3 : "Loader", 4 : "Electronics", 5 : "Steward", 6 : "Navigation"},
+            "Advanced Education" : {1 :"Medicine", 2: "Computer", 3 : "Broker", 4 : "Pilot", 5 : "Navigation", 6 : "Engineering"}
         },
-        "rank" : {0: "Starman",1 : "Midshipman",2:"Lieutenant",3:"Lt Commander",4:"Commander",5:"Captain",6:"Commodore"},
-        "rankskills" : {0: "Zero-G",1 : "",2:"",3:"Tactics",4:"",5:"",6:""},
-        "cash" : {1 : "1000",2 : "5000",3 : "10000",4 : "10000",5 : "20000",6 : "50000",7 : "50000"},
-        "benefits" : {1 : "Low Passage",2 : "+1 edu",3 : "Weapon",4 : "Mid Passage",5 : "+1 soc",6 : "High Passage",7 : "Explorers' Society"},
+        "rank" : {0: "Crewman",1 : "4th Officer",2:"3rd Officer",3:"2nd Officer",4:"2nd Officer",5:"Captain",6:"Senior Captain"},
+        "rankskills" : {0: "Zero-G",1 : "",2:"",3:"Pilot",4:"",5:"Pilot",6:""},
+        "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
+        "benefits" : {1 : "Mid Passage",2 : "+1 edu",3 : "Weapon",4 : "High Passage",5 : "+1 int",6 : "High Passage",7 : "Star Envoy Club"},
     },
 
 
@@ -385,23 +385,23 @@ var jobs = {
     // },
 
     "Physician": {
-        'explain' : 'Individual that is skilled in the science of medicine and is trained and licensed to treat sick and injured people.',
-        "qual" : { attr : "edu", val: 6},
-        "survival" : { attr : "int", val: 4},
-        "commission" : { attr : "int", val: 5},
+        'explain' : 'Is there a Doctor in the house?',
+        "qual" : { attr : "int", val: 9},
+        "survival" : { attr : "int", val: 3},
+        "commission" : { attr : "edu", val: 6},
         "advancement" : { attr : "edu", val: 8},
-        "re-enlist" : 5,
+        "re-enlist" : 4,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"Gun Combat"},
-            "Service Skills" : {1: "Admin",2: "Computer",3:"Mechanics",4:"Medicine",5:"Leadership",6:"Sciences"},
-            "Specialist" : {1 :"Computer", 2: "Carousing", 3 : "Electronics", 4 : "Medicine", 5 : "Medicine", 6 : "Sciences"},
-            "Advanced Education" : {1 :"Advocate", 2: "Computer", 3 : "Jack-of-All-Trades", 4 : "Linguistics", 5 : "Medicine", 6 : "Sciences"}
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"+1 soc"},
+            "Service Skills" : {1: "+1 dex",2: "Electronics",3:"Medicine",4:"Streetwise",5:"Medicine",6:"Investigate"},
+            "Specialist" : {1 :"Liason", 2: "Investigate", 3 : "Mechanics", 4 : "Electronics", 5 : "Computer", 6 : "Admin"},
+            "Advanced Education" : {1 :"Liason", 2: "Medicine", 3 : "Admin", 4 : "Computer", 5 : "+1 int", 6 : "+1 edu"}
         },
-        "rank" : {0: "Intern",1 : "Resident",2:"Senior Resident",3:"Chief Resident",4:"Attending Physician",5:"Service Chief",6:"Hospital Admin"},
-        "rankskills" : {0: "Medicine",1 : "",2:"",3:"",4:"Admin",5:"",6:""},
-        "cash" : {1 : "2000",2 : "10000",3 : "20000",4 : "20000",5 : "50000",6 : "100000",7 : "1000000"},
-        "benefits" : {1 : "Low Passage",2 : "+1 edu",3 : "+1 int",4 : "High Passage",5 : "Explorers' Society",6 : "High Passage",7 : "+1 soc"},
+        "rank" : {0: "Student",1 : "Intern",2:"Junior Doctor",3:"Doctor",4:"Doctor",5:"Consultant",6:"Senior Consultant"},
+        "rankskills" : {0: "Medicine",1 : "Medicine",2:"Medicine",3:"",4:"",5:"",6:""},
+        "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
+        "benefits" : {1 : "Mid Passage",2 : "+1 edu",3 : "+1 edu",4 : "High Passage",5 : "Trauma Kit",6 : "High Passage",7 : "+1 soc"},
     },
 
 
@@ -427,43 +427,43 @@ var jobs = {
 
     "Rogue": {
         'explain' : 'Individual that makes their living through illicit means.',
-        "qual" : { attr : "dex", val: 5},
-        "survival" : { attr : "dex", val: 4},
-        "commission" : { attr : "str", val: 6},
-        "advancement" : { attr : "int", val: 7},
+        "qual" : { attr : "end", val: 6},
+        "survival" : { attr : "int", val: 6},
+        "commission" : { attr : "str", val: 8},
+        "advancement" : { attr : "int", val: 6},
         "re-enlist" : 4,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Melee Combat",5:"Bribery",6:"Gambling"},
-            "Service Skills" : {1: "Streetwise",2: "Mechanics",3:"Gun Combat",4:"Melee Combat",5:"Recon",6:"Vehicle"},
-            "Specialist" : {1 :"Computer", 2: "Electronics", 3 : "Bribery", 4 : "Broker", 5 : "Recon", 6 : "Vehicle"},
-            "Advanced Education" : {1 :"Computer", 2: "Gravitics", 3 : "Jack-of-All-Trades", 4 : "Medicine", 5 : "Advocate", 6 : "Tactics"}
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Brawling",5:"Blade Combat",6:"Carousing"},
+            "Service Skills" : {1: "Blade Combat",2: "Gun Combat",3:"Brawling",4:"Vehicle",5:"Recon",6:"Vehicle"},
+            "Specialist" : {1 :"Streetwise", 2: "Forgery", 3 : "Bribery", 4 : "Demolitions", 5 : "Security", 6 : "Blade Combat"},
+            "Advanced Education" : {1 :"Tactics", 2: "Bribery", 3 : "Forgery", 4 : "Computer", 5 : "Leadership", 6 : "Jack-of-All-Trades"}
         },
-        "rank" : {0: "Independent",1 : "Associate",2:"Soldier",3:"Lieutenant",4:"Underboss",5:"Consigliere",6:"Boss"},
-        "rankskills" : {0: "Streetwise",1 : "",2:"Gun Combat",3:"",4:"",5:"",6:""},
-        "cash" : {1 : "1000",2 : "5000",3 : "10000",4 : "10000",5 : "20000",6 : "50000",7 : "50000"},
-        "benefits" : {1 : "Low Passage",2 : "+1 edu",3 : "Weapon",4 : "Mid Passage",5 : "Weapon",6 : "High Passage",7 : "+1 soc"},
+        "rank" : {0: "Cholo",1 : "Soldier",2:"Veteran",3:"Capo",4:"Underboss",5:"Consigliere",6:"Boss"},
+        "rankskills" : {0: "Streetwise",1 : "Blade Combat",2:"",3:"",4:"",5:"",6:""},
+        "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
+        "benefits" : {1 : "Low Passage",2 : "+1 soc",3 : "Weapon",4 : "Weapon",5 : "High Passage",6 : "+1 end",7 : "Star Envoy Club"},
     },
 
 
     "Scientist": {
         'explain' : 'Individual that is engaged in and has expert knowledge of a science, especially a biological or physical science.',
         "qual" : { attr : "edu", val: 6},
-        "survival" : { attr : "edu", val: 5},
-        "commission" : { attr : "int", val: 7},
-        "advancement" : { attr : "int", val: 6},
+        "survival" : { attr : "int", val: 3},
+        "commission" : { attr : "edu", val: 5},
+        "advancement" : { attr : "edu", val: 8},
         "re-enlist" : 5,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"Gun Combat"},
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"+1 int"},
             "Service Skills" : {1: "Admin",2: "Computer",3:"Electronics",4:"Medicine",5:"Bribery",6:"Sciences"},
-            "Specialist" : {1 :"Navigation", 2: "Admin", 3 : "Sciences", 4 : "Sciences", 5 : "Animals", 6 : "Vehicle"},
-            "Advanced Education" : {1 :"Advocate", 2: "Computer", 3 : "Jack-of-All-Trades", 4 : "Linguistics", 5 : "Medicine", 6 : "Sciences"}
+            "Specialist" : {1 :"Navigation", 2: "Admin", 3 : "Sciences", 4 : "Sciences", 5 : "Vetinary Medicine", 6 : "Vehicle"},
+            "Advanced Education" : {1 :"Advocate", 2: "Computer", 3 : "Jack-of-All-Trades", 4 : "Investigate", 5 : "Medicine", 6 : "Sciences"}
         },
-        "rank" : {0: "Instructor",1 : "Adjunct Professor",2:"Research Professor",3:"Assistant Professor",4:"Associate Professor",5:"Professor",6:"Distinguished Professor"},
+        "rank" : {0: "Researcher",1 : "Postgraduate",2:"Scientist",3:"Senior Scientist",4:"Associate Professor",5:"Professor",6:"Faculty Director"},
         "rankskills" : {0: "Sciences",1 : "",2:"",3:"Computer",4:"",5:"",6:""},
-        "cash" : {1 : "1000",2 : "5000",3 : "10000",4 : "10000",5 : "20000",6 : "50000",7 : "50000"},
-        "benefits" : {1 : "Low Passage",2 : "+1 edu",3 : "+1 int",4 : "Mid Passage",5 : "+1 soc",6 : "High Passage",7 : "Research Vessel"},
+        "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
+        "benefits" : {1 : "Mid Passage",2 : "High Passage",3 : "High Passage",4 : "+1 end",5 : "+1 soc",6 : "Weapon",7 : "Star Envoy Club"},
     },
 
 
@@ -489,43 +489,43 @@ var jobs = {
 
     "Technician": {
         'explain' : 'Individual that is skilled in mechanical or industrial techniques or in a particular technical field.',
-        "qual" : { attr : "edu", val: 6},
-        "survival" : { attr : "dex", val: 4},
-        "commission" : { attr : "edu", val: 6},
-        "advancement" : { attr : "int", val: 8},
+        "qual" : { attr : "edu", val: 7},
+        "survival" : { attr : "int", val: 4},
+        "commission" : { attr : "edu", val: 4},
+        "advancement" : { attr : "edu", val: 8},
         "re-enlist" : 5,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"Gun Combat"},
-            "Service Skills" : {1: "Admin",2: "Computer",3:"Mechanics",4:"Medicine",5:"Electronics",6:"Sciences"},
-            "Specialist" : {1 :"Computer", 2: "Electronics", 3 : "Gravitics", 4 : "Linguistics", 5 : "Engineering", 6 : "Animals"},
-            "Advanced Education" : {1 :"Advocate", 2: "Computer", 3 : "Jack-of-All-Trades", 4 : "Linguistics", 5 : "Medicine", 6 : "Sciences"}
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"Brawling",6:"Gun Combat"},
+            "Service Skills" : {1: "Vehicle",2: "Electronics",3:"Mechanics",4:"Comms",5:"Zero-G",6:"Sciences"},
+            "Specialist" : {1 :"Investigate", 2: "Vehicle", 3 : "Computer", 4 : "Security", 5 : "Engineering", 6 : "Jack-of-All-Trades"},
+            "Advanced Education" : {1 :"Mechanical", 2: "Computer", 3 : "Admin", 4 : "Electronics", 5 : "Engineering", 6 : "Jack-of-All-Trades"}
         },
-        "rank" : {0: "Technician",1 : "Team Lead",2:"Supervisor",3:"Manager",4:"Director",5:"Vice-President",6:"Executive Officer"},
-        "rankskills" : {0: "Computer",1 : "",2:"",3:"",4:"Admin",5:"",6:""},
-        "cash" : {1 : "1000",2 : "5000",3 : "10000",4 : "10000",5 : "20000",6 : "50000",7 : "50000"},
-        "benefits" : {1 : "Low Passage",2 : "+1 edu",3 : "+1 int",4 : "Mid Passage",5 : "Mid Passage",6 : "High Passage",7 : "+1 soc"},
+        "rank" : {0: "Technician",1 : "Team Lead",2:"Supervisor",3:"Head of Department",4:"Director",5:"Vice-President",6:"Executive Officer"},
+        "rankskills" : {0: "Electronics",1 : "Mechanics",2:"",3:"",4:"",5:"",6:""},
+        "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
+        "benefits" : {1 : "Mid Passage",2 : "High Passage",3 : "Weapon",4 : "+1 int",5 : "+1 edu",6 : "+1 dex",7 : "+2 edu"},
     },
 
 
     "Marshal": {
           'explain' : 'Local law enforcement officer.',
-        "qual" : { attr : "dex", val: 6},
-        "survival" : { attr : "int", val: 6},
-        "commission" : { attr : "edu", val: 6},
-        "advancement" : { attr : "edu", val: 8},
-        "re-enlist" : 6,
+        "qual" : { attr : "int", val: 7},
+        "survival" : { attr : "dex", val: 6},
+        "commission" : { attr : "edu", val: 8},
+        "advancement" : { attr : "int", val: 7},
+        "re-enlist" : 5,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Melee Combat",5:"Streetwise",6:"Gambling"},
-            "Service Skills" : {1: "Streetwise",2: "Vehicle",3:"",4:"",5:"Melee Combat",6:"Gun Combat"},
-            "Specialist" : {1 :"Comms", 2: "Gravitics", 3 : "Gun Combat", 4 : "Gunnery", 5 : "Recon", 6 : "Piloting"},
-            "Advanced Education" : {1 :"Advocate", 2: "Computer", 3 : "Jack-of-All-Trades", 4 : "Medicine", 5 : "Leadership", 6 : "Tactics"}
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"+1 soc"},
+            "Service Skills" : {1: "Streetwise",2: "Brawling",3:"Brawling",4:"Investigate",5:"Recon",6:"Gun Combat"},
+            "Specialist" : {1 :"Gun Combat", 2: "Comms", 3 : "Ground Vehicle", 4 : "Security", 5 : "Computer", 6 : "Medicine"},
+            "Advanced Education" : {1 :"Medicine", 2: "Tactics", 3 : "Investigate", 4 : "Computer", 5 : "Admin", 6 : "Tactics"}
         },
-        "rank" : {0: "Rookie",1 : "Corporal",2:"Sergeant",3:"Lieutenant",4:"Detective",5:"Chief",6:"Commissioner"},
-        "rankskills" : {0: "Aircraft",1 : "",2:"",3:"Leadership",4:"",5:"",6:""},
-        "cash" : {1 : "1000",2 : "2000",3 : "5000",4 : "10000",5 : "10000",6 : "25000",7 : "50000"},
-        "benefits" : {1 : "Low Passage",2 : "+1 edu",3 : "Weapon",4 : "Weapon",5 : "High Passage",6 : "+1 soc",7 : "Explorers' Society"},
+        "rank" : {0: "Deputy",1 : "Sherriff",2:"Inspector",3:"Lieutenant",4:"Marshal",5:"Chief",6:"Commissioner"},
+        "rankskills" : {0: "Investigate",1 : "",2:"",3:"",4:"",5:"",6:""},
+        "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
+        "benefits" : {1 : "Mid Passage",2 : "High Passage",3 : "+2 int",4 : "+1 edu",5 : "Weapon",6 : "High Passage",7 : "+1 soc"},
     },
 
 

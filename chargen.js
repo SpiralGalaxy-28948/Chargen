@@ -150,7 +150,7 @@ function attrbonus(attribute)
 
 var skills = [];
 var backgroundSkills = [
-	"Admin","Advocate","Animals","Broker","Carousing","Comms","Computer","Electronics","Engineering","Gun Combat","Life Sciences","Linguistics","Mechanics","Medicine","Melee Combat", "Physical Sciences","Social Sciences","Streetwise","Survival","Space Sciences","Vehicle","Zero-G"
+	"Admin","Carousing","Comms","Computer","Electronics","Engineering","Gambling","Investigate", "Liason", "Mechanics","Medicine","Survival"
 ];
 
 
@@ -450,7 +450,7 @@ function checkCommision(career) {
 		addToHistory('First Term after Drafted Can not get a Commission');
 		return false;
 	}
-	let roll = d2();
+	let roll = d2(false, "Commission");
 	let mod = attrbonus(jobs[career].commission.attr);
 	console.log([roll,mod,jobs[career].commission.val]);
 	roll = roll + +mod;
@@ -459,7 +459,7 @@ function checkCommision(career) {
 }
 
 function checkAdvance(career) {
-	let roll = d2();
+	let roll = d2(false, "Advancement");
 	let mod = attrbonus(jobs[career].advancement.attr);
 	console.log([roll,mod,jobs[career].advancement.val]);
 	roll = roll + +mod;
@@ -525,7 +525,7 @@ function checkEnlist(career) {
 	let qual = jobs[career]['qual']['val'];
 	let bonus = attrbonus(jobs[career]['qual']['attr']);
 	let careers = char.careernum * -2;
-	let roll = d2();
+	let roll = d2(false, "Enlistment");
 	let total = roll + bonus + careers;
 	console.log("Qual: " + qual + " Bonus: " + bonus + " Roll: " + roll + " Career Mod : " + careers + " Roll:" + total);
 	if (total >= qual) {
@@ -552,22 +552,22 @@ function doDraft()
 	switch (roll)
 	{
 		case 1:
-			career = 'Aerospace Defense';
+			career = 'Ranger';
 			break;
 		case 2:
-			career = 'Marine';
+			career = 'Colonist';
 			break;
 		case 3:
-			career = 'Maritime Defense';
+			career = 'Colonist';
 			break;
 		case 4:
-			career = 'Navy';
+			career = 'Colonist';
 			break;
 		case 5:
-			career = 'Scout';
+			career = 'Roughneck';
 			break;
 		case 6:
-			career = 'Surface Defense';
+			career = 'Roughneck';
 			break;
 	}
 	addToHistory('Your Drafted Career is ' + career);
@@ -624,7 +624,7 @@ function basicTraining(career) {
 }
 
 function checkSurival(career) {
-	let roll = d2() + attrbonus(jobs[career].survival.attr);
+	let roll = d2(false, "Survival") + attrbonus(jobs[career].survival.attr);
 	if(roll >= jobs[career].survival.val)
 	{
 		return true;
@@ -658,7 +658,7 @@ function ageCheck()
 	else
 	{
 		addToHistory('Doing Aging Check');
-		let roll = d2();
+		let roll = d2(false, "Aging");
 		let mod = char.terms;
 		let result = roll - mod;
 		console.log('*** AGING CHECK ****');
@@ -1096,7 +1096,7 @@ function musterOut(check)
 	let career = char.careers[char.careernum]['career'];
 	if(check)
 	{
-		let roll = d2();
+		let roll = d2(false, "Mustering Out");
 		if(roll == 12) // forced term
 		{
 			addToHistory('Forced To Do Another Term');
