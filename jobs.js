@@ -199,25 +199,25 @@ var jobs = {
     //     "benefits" : {1 : "Low Passage",2 : "+1 edu",3 : "Mid Passage",4 : "High Passage",5 : "+1 soc",6 : "High Passage",7 : "Explorers' Society"},
     // },
 
-    // "Drifter": {
-    //     'explain' : 'Individual that continually moves from place to place, without any fixed home or job.',
-    //     "qual" : { attr : "dex", val: 5},
-    //     "survival" : { attr : "end", val: 5},
-    //     "commission" : { attr : "", val: 0},
-    //     "advancement" : { attr : "", val: 0},
-    //     "re-enlist" : 5,
-    //     "skillperterm" : 2,
-    //     "skills": {
-    //         "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Melee Combat",5:"Bribery",6:"Gambling"},
-    //         "Service Skills" : {1: "Streetwise",2: "Mechanics",3:"Gun Combat",4:"Melee Combat",5:"Recon",6:"Vehicle"},
-    //         "Specialist" : {1 :"Electronics", 2: "Melee Combat", 3 : "Bribery", 4 : "Streetwise", 5 : "Gambling", 6 : "Recon"},
-    //         "Advanced Education" : {1 :"Computer", 2: "Engineering", 3 : "Jack-of-All-Trades", 4 : "Medicine", 5 : "Liaison", 6 : "Tactics"}
-    //     },
-    //     "rank" : {0: "",1 : "",2:"",3:"",4:"",5:"",6:""},
-    //     "rankskills" : {0: "",1 : "",2:"",3:"Tactics",4:"",5:"",6:""},
-    //     "cash" : {1 : "0",2 : "1000",3 : "2000",4 : "5000",5 : "5000",6 : "10000",7 : "100000"},
-    //     "benefits" : {1 : "Low Passage",2 : "+1 int",3 : "Weapon",4 : "Weapon",5 : "Mid Passage",6 : "Mid Passage",7 : ""},
-    // },
+     "Drifter": {
+         'explain' : 'Individual that continually moves from place to place, without any fixed home or job.',
+         "qual" : { attr : "dex", val: 5},
+         "survival" : { attr : "end", val: 5},
+         "commission" : { attr : "", val: 0},
+         "advancement" : { attr : "", val: 0},
+         "re-enlist" : 5,
+         "skillperterm" : 2,
+         "skills": {
+             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Brawling",5:"Bribery",6:"Gambling"},
+             "Service Skills" : {1: "Streetwise",2: "Mechanics",3:"Gun Combat",4:"Melee Combat",5:"Recon",6:"Vehicle"},
+             "Specialist" : {1 :"Electronics", 2: "Melee Combat", 3 : "Bribery", 4 : "Streetwise", 5 : "Gambling", 6 : "Recon"},
+             "Advanced Education" : {1 :"Computer", 2: "Engineering", 3 : "Jack-of-All-Trades", 4 : "Medicine", 5 : "Liaison", 6 : "Tactics"}
+         },
+         "rank" : {0: "",1 : "",2:"",3:"",4:"",5:"",6:""},
+         "rankskills" : {0: "",1 : "",2:"",3:"Tactics",4:"",5:"",6:""},
+         "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
+         "benefits" : {1 : "Low Passage",2 : "+1 int",3 : "Weapon",4 : "Weapon",5 : "Mid Passage",6 : "Mid Passage",7 : ""},
+     },
 
 
     // "Entertainer": {
