@@ -526,7 +526,7 @@ var jobs = {
         "rankskills" : {0: "Investigate",1 : "",2:"",3:"",4:"",5:"",6:""},
         "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
         "benefits" : {1 : "Mid Passage",2 : "High Passage",3 : "+2 int",4 : "+1 edu",5 : "Weapon",6 : "High Passage",7 : "+1 soc"},
-    },
+    }
 
 
 
