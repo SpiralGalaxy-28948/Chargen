@@ -6,6 +6,7 @@ var skilltree = {
     "Riding":1,
     "Survival":1,
     "Veterinary Medicine":1},
+    "Brawling",
     "Farming":1,
     "Riding":1,
     "Survival":1,
