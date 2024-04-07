@@ -126,7 +126,7 @@ var jobs = {
         "re-enlist" : 7,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Gambling",5:"Zero-G",6:"Melee combat"},
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Gambling",5:"Zero-G",6:"Melee Combat"},
             "Service Skills" : {1: "Zero-G",2: "Mining",3:"Loader",4:"Demolitions",5:"Comms",6:"Ground Vehicle"},
             "Specialist" : {1 :"Streetwise", 2: "Electronic", 3 : "Ground Vehicle", 4 : "Mechanical", 5 : "Mining", 6 : "Admin"},
             "Advanced Education" : {1 :"Navigation", 2: "Medicine", 3 : "Electronics", 4 : "Computer", 5 : "Engineering", 6 : "Jack-of-all-Trades"}
@@ -167,7 +167,7 @@ var jobs = {
         "re-enlist" : 5,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"Melee combat",6:"Gun Combat"},
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"Melee Combat",6:"Gun Combat"},
             "Service Skills" : {1: "Mechanics",2: "Comms",3:"Agriculture",4:"Electronics",5:"Survival",6:"Vehicle"},
             "Specialist" : {1 :"Loader", 2: "Carousing", 3 : "Jack-of-All-Trades", 4 : "Engineering", 5 : "Agriculture", 6 : "Vehicle"},
             "Advanced Education" : {1 :"Medicine", 2: "Agriculture", 3 : "Jack-of-All-Trades", 4 : "Liaison", 5 : "Admin", 6 : "Leadership"}
@@ -208,7 +208,7 @@ var jobs = {
          "re-enlist" : 5,
          "skillperterm" : 2,
          "skills": {
-             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Melee combat",5:"Bribery",6:"Gambling"},
+             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Melee Combat",5:"Bribery",6:"Gambling"},
              "Service Skills" : {1: "Streetwise",2: "Mechanics",3:"Gun Combat",4:"Melee Combat",5:"Recon",6:"Vehicle"},
              "Specialist" : {1 :"Electronics", 2: "Melee Combat", 3 : "Bribery", 4 : "Streetwise", 5 : "Gambling", 6 : "Recon"},
              "Advanced Education" : {1 :"Computer", 2: "Engineering", 3 : "Jack-of-All-Trades", 4 : "Medicine", 5 : "Liaison", 6 : "Tactics"}
@@ -249,7 +249,7 @@ var jobs = {
         "re-enlist" : 5,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"Gun Combat",6:"Melee combat"},
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"Gun Combat",6:"Melee Combat"},
             "Service Skills" : {1: "Gun Combat",2: "Agriculture",3:"Survival",4:"Recon",5:"Ground Vehicle",6:"Survival"},
             "Specialist" : {1 :"Mechanics", 2: "Electronics", 3 : "Comms", 4 : "Recon", 5 : "Ground Vehicle", 6 : "Survival"},
             "Advanced Education" : {1 :"Medicine", 2: "Computer", 3 : "Jack-of-All-Trades", 4 : "Leadership", 5 : "Tactics", 6 : "Mechanics"}
@@ -270,7 +270,7 @@ var jobs = {
         "re-enlist" : 6,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Gambling",5:"Melee combat",6:"Melee combat"},
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Gambling",5:"Melee Combat",6:"Melee Combat"},
             "Service Skills" : {1: "Ground Vehicle",2: "Comms",3:"Gun Combat",4:"Survival",5:"Gun Combat",6:"Zero-G"},
             "Specialist" : {1 :"Vehicle", 2: "Mechanics", 3 : "Electronics", 4 : "Demolitions", 5 : "Recon", 6 : "Heavy Weapons"},
             "Advanced Education" : {1 :"Medicine", 2: "Security", 3 : "Tactics", 4 : "Computer", 5 : "Leader", 6 : "Admin"}
@@ -333,7 +333,7 @@ var jobs = {
         "skillperterm" : 1,
         "skills": {
             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"+1 soc"},
-            "Service Skills" : {1: "Zero-G",2: "Computer",3:"Loader",4:"Gunnery",5:"Melee combat",6:"Gun Combat"},
+            "Service Skills" : {1: "Zero-G",2: "Computer",3:"Loader",4:"Gunnery",5:"Melee Combat",6:"Gun Combat"},
             "Specialist" : {1 :"Gunnery", 2: "Mechanics", 3 : "Electronics", 4 : "Engineering", 5 : "Leadership", 6 : "Comms"},
             "Advanced Education" : {1 :"Medicine", 2: "Navigation", 3 : "Engineering", 4 : "Computer", 5 : "Pilot", 6 : "Admin"}
         },
@@ -351,7 +351,7 @@ var jobs = {
         "re-enlist" : 4,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 str",5:"Melee combat",6:"Zero-G"},
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 str",5:"Melee Combat",6:"Zero-G"},
             "Service Skills" : {1: "Comms",2: "Bribery",3:"Gun Combat",4:"Loader",5:"Broker",6:"Vehicle"},
             "Specialist" : {1 :"Zero-G", 2: "Mechanics", 3 : "Loader", 4 : "Electronics", 5 : "Steward", 6 : "Navigation"},
             "Advanced Education" : {1 :"Medicine", 2: "Computer", 3 : "Broker", 4 : "Pilot", 5 : "Navigation", 6 : "Engineering"}
@@ -434,13 +434,13 @@ var jobs = {
         "re-enlist" : 4,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Melee combat",5:"Melee combat",6:"Carousing"},
-            "Service Skills" : {1: "Melee combat",2: "Gun Combat",3:"Melee combat",4:"Vehicle",5:"Recon",6:"Vehicle"},
-            "Specialist" : {1 :"Streetwise", 2: "Forgery", 3 : "Bribery", 4 : "Demolitions", 5 : "Security", 6 : "Melee combat"},
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Melee Combat",5:"Melee Combat",6:"Carousing"},
+            "Service Skills" : {1: "Melee Combat",2: "Gun Combat",3:"Melee Combat",4:"Vehicle",5:"Recon",6:"Vehicle"},
+            "Specialist" : {1 :"Streetwise", 2: "Forgery", 3 : "Bribery", 4 : "Demolitions", 5 : "Security", 6 : "Melee Combat"},
             "Advanced Education" : {1 :"Tactics", 2: "Bribery", 3 : "Forgery", 4 : "Computer", 5 : "Leadership", 6 : "Jack-of-All-Trades"}
         },
         "rank" : {0: "Cholo",1 : "Soldier",2:"Veteran",3:"Capo",4:"Underboss",5:"Consigliere",6:"Boss"},
-        "rankskills" : {0: "Streetwise",1 : "Melee combat",2:"",3:"",4:"",5:"",6:""},
+        "rankskills" : {0: "Streetwise",1 : "Melee Combat",2:"",3:"",4:"",5:"",6:""},
         "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
         "benefits" : {1 : "Low Passage",2 : "+1 soc",3 : "Weapon",4 : "Weapon",5 : "High Passage",6 : "+1 end",7 : "Star Envoy Club"},
     },
@@ -496,7 +496,7 @@ var jobs = {
         "re-enlist" : 5,
         "skillperterm" : 1,
         "skills": {
-            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"Melee combat",6:"Gun Combat"},
+            "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"Melee Combat",6:"Gun Combat"},
             "Service Skills" : {1: "Vehicle",2: "Electronics",3:"Mechanics",4:"Comms",5:"Zero-G",6:"Sciences"},
             "Specialist" : {1 :"Investigate", 2: "Vehicle", 3 : "Computer", 4 : "Security", 5 : "Engineering", 6 : "Jack-of-All-Trades"},
             "Advanced Education" : {1 :"Mechanical", 2: "Computer", 3 : "Admin", 4 : "Electronics", 5 : "Engineering", 6 : "Jack-of-All-Trades"}
@@ -518,7 +518,7 @@ var jobs = {
         "skillperterm" : 1,
         "skills": {
             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"+1 soc"},
-            "Service Skills" : {1: "Streetwise",2: "Melee combat",3:"Melee combat",4:"Investigate",5:"Recon",6:"Gun Combat"},
+            "Service Skills" : {1: "Streetwise",2: "Melee Combat",3:"Melee Combat",4:"Investigate",5:"Recon",6:"Gun Combat"},
             "Specialist" : {1 :"Gun Combat", 2: "Comms", 3 : "Ground Vehicle", 4 : "Security", 5 : "Computer", 6 : "Medicine"},
             "Advanced Education" : {1 :"Medicine", 2: "Tactics", 3 : "Investigate", 4 : "Computer", 5 : "Admin", 6 : "Tactics"}
         },
