@@ -129,7 +129,7 @@ var jobs = {
             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Gambling",5:"Zero-G",6:"Melee Combat"},
             "Service Skills" : {1: "Zero-G",2: "Mining",3:"Loader",4:"Demolitions",5:"Comms",6:"Ground Vehicle"},
             "Specialist" : {1 :"Streetwise", 2: "Electronic", 3 : "Ground Vehicle", 4 : "Mechanical", 5 : "Mining", 6 : "Admin"},
-            "Advanced Education" : {1 :"Navigation", 2: "Medicine", 3 : "Electronics", 4 : "Computer", 5 : "Engineering", 6 : "Jack-of-all-Trades"}
+            "Advanced Education" : {1 :"Navigation", 2: "Medicine", 3 : "Electronics", 4 : "Computer", 5 : "Engineering", 6 : "Jack-of-All-Trades"}
         },
         "rank" : {0: "Gofer",1 : "Floorhand",2:"Asst Driller",3:"Driller",4:"Toolpusher",5:"Supervisor",6:"General Mgr"},
         "rankskills" : {0: "Zero-G",1 : "Mining",2:"",3:"",4:"Mechanics",5:"",6:"Admin"},
@@ -150,7 +150,7 @@ var jobs = {
             "Personal Development" : {1: "Streetwise",2: "+1 int",3:"+1 edu",4:"+1 soc",5:"Carousing",6:"Bribery"},
             "Service Skills" : {1: "Gambling",2: "Admin",3:"Carousing",4:"Leadership",5:"Bribery",6:"Forgery"},
             "Specialist" : {1 :"Broker", 2: "Liason", 3 : "Vehicle", 4 : "Broker", 5 : "Computer", 6 : "Leadership"},
-            "Advanced Education" : {1 :"Medical", 2: "Computer", 3 : "Admin", 4 : "Liason", 5 : "Leader", 6 : "Jack-of-all-Trades"}
+            "Advanced Education" : {1 :"Medical", 2: "Computer", 3 : "Admin", 4 : "Liason", 5 : "Leader", 6 : "Jack-of-All-Trades"}
         },
         "rank" : {0: "Manager", 1: "VP",2 : "Senior VP",3:"Exec VP",4:"Senior Exec VP",5:"Director",6:"President"},
         "rankskills" : {0: "",1 : "Broker",2:"",3:"",4:"Advocate",5:"",6:""},
