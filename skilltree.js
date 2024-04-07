@@ -125,5 +125,6 @@ var skilltree = {
     "Tactics":1,
     "Zero-G":1,
     "Mining":1,
-    "Forgery":1
+    "Forgery":1,
+    "Loader":1
     };
