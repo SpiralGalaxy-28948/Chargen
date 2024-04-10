@@ -818,6 +818,7 @@ function addBasicTrainingSkill(skill, level) {
 		default:
 			if (skill.split('')[0] == '+' || skill.split('')[0] == '-') {
 				modattr(skill);
+				console.log('here',skill)
 			} else {
 				let check = basicTrainingSkillcheck(skill, level);
 				if (check == 1) {
