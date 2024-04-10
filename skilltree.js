@@ -118,6 +118,7 @@ var skilltree = {
     "Space Sciences":1},
     "Life Sciences":1,
     "Physical Sciences":1,
+    "Security":1,
     "Social Sciences":1,
     "Space Sciences":1,
     "Steward":1,
