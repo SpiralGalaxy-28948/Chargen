@@ -792,6 +792,7 @@ function selectServiceSkill(level)
 
 
 function addBasicTrainingSkill(skill, level) {
+	console.log('addbasicTrainingSkill',skill,level);
 	putHTML('formtest', '');
 	let career = char.careers[char.careernum]['career'];
 	switch (skill) {
