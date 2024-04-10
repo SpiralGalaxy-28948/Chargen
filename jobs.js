@@ -394,9 +394,9 @@ var jobs = {
         "skillperterm" : 1,
         "skills": {
             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"+1 soc"},
-            "Service Skills" : {1: "+1 dex",2: "Electronics",3:"Medicine",4:"Streetwise",5:"Medicine",6:"Investigate"},
-            "Specialist" : {1 :"Liason", 2: "Investigate", 3 : "Mechanics", 4 : "Electronics", 5 : "Computer", 6 : "Admin"},
-            "Advanced Education" : {1 :"Liason", 2: "Medicine", 3 : "Admin", 4 : "Computer", 5 : "+1 int", 6 : "+1 edu"}
+            "Service Skills" : {1: "Electronics",2: "Medicine",3: "Streetwise",4: "Medicine",5: "Investigate",6:"+1 dex"},
+            "Specialist" : {1: "Liason", 2: "Investigate", 3 : "Mechanics", 4 : "Electronics", 5 : "Computer", 6 : "Admin"},
+            "Advanced Education" : {1: "Liason", 2: "Medicine", 3 : "Admin", 4 : "Computer", 5 : "+1 int", 6 : "+1 edu"}
         },
         "rank" : {0: "Student",1 : "Intern",2:"Junior Doctor",3:"Doctor",4:"Doctor",5:"Consultant",6:"Senior Consultant"},
         "rankskills" : {0: "Medicine",1 : "Medicine",2:"Medicine",3:"",4:"",5:"",6:""},
