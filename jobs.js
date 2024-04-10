@@ -457,7 +457,7 @@ var jobs = {
         "skills": {
             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"+1 int"},
             "Service Skills" : {1: "Admin",2: "Computer",3:"Electronics",4:"Medicine",5:"Bribery",6:"Sciences"},
-            "Specialist" : {1 :"Navigation", 2: "Admin", 3 : "Sciences", 4 : "Sciences", 5 : "Vetinary Medicine", 6 : "Vehicle"},
+            "Specialist" : {1 :"Navigation", 2: "Admin", 3 : "Sciences", 4 : "Sciences", 5 : "Veterinary Medicine", 6 : "Vehicle"},
             "Advanced Education" : {1 :"Advocate", 2: "Computer", 3 : "Jack-of-All-Trades", 4 : "Investigate", 5 : "Medicine", 6 : "Sciences"}
         },
         "rank" : {0: "Researcher",1 : "Postgraduate",2:"Scientist",3:"Senior Scientist",4:"Associate Professor",5:"Professor",6:"Faculty Director"},
