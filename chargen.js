@@ -1086,6 +1086,7 @@ function attemptReenlist() {
 	else
 	{
 		addToHistory(career + " reenlistment failed");
+		addToHistory(mishaps[career][d1()]);
 		let links = "";
 		links += " &nbsp; <a href='javascript:attemptReenlist();'>Re-enlist (attempt again)</a>";
 		links += " &nbsp; <a href='javascript:musterOut(false);'>Muster Out</a>";
