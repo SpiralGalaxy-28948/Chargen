@@ -68,7 +68,7 @@ function d1()
 function d()
 {
 	let r = d1();
-	return parseInt(prompt("[1]Enter 1d6 roll",r),10);
+	return parseInt(prompt("Enter 1d6 roll",r),10);
 }
 
 function randomIntFromInterval(min, max) { // min and max included
@@ -1086,7 +1086,7 @@ function attemptReenlist() {
 	else
 	{
 		addToHistory(career + " reenlistment failed");
-		addToHistory(mishaps[career][d1()]);
+		addToHistory(mishaps[career][d()]);
 		let links = "";
 		links += " &nbsp; <a href='javascript:attemptReenlist();'>Re-enlist (attempt again)</a>";
 		links += " &nbsp; <a href='javascript:musterOut(false);'>Muster Out</a>";
