@@ -1051,6 +1051,7 @@ function doAdvancementCheck(career)
 function surviveNo(career) {
 	addToHistory('Failed Your Survival Check');
 	setTitle('You failed your survival Check');
+	addToHistory(mishaps[career][d()]);
 	setMessage('');
 	let links = "<a href='javascript:surviveYes(\"" + career + "\");'>Override Yes</a>";
 	links += " &nbsp; <a href='javascript:musterOut(\"" + career + "\");'>End Character</a>";
@@ -1086,7 +1087,7 @@ function attemptReenlist() {
 	else
 	{
 		addToHistory(career + " reenlistment failed");
-		addToHistory(mishaps[career][d()]);
+		
 		let links = "";
 		links += " &nbsp; <a href='javascript:attemptReenlist();'>Re-enlist (attempt again)</a>";
 		links += " &nbsp; <a href='javascript:musterOut(false);'>Muster Out</a>";
