@@ -71,7 +71,7 @@ var jobs = {
             "Advanced Education" : {1 :"Medicine", 2: "Navigation", 3 : "Engineering", 4 : "Computer", 5 : "Piloting", 6 : "Jack-of-All-Trades"}
         },
         "rank" : {0: "Scout",1 : "Senior",2:"Supervisor",3:"Mission Specialist",4:"Senior Mission Specialist",5:"Mission Chief",6:"Operations Chief"},
-        "rankskills" : {0: "Survival",1 : "Piloting",2:"",3:"Tactics",4:"",5:"",6:""},
+        "rankskills" : {0: "Survival",1 : "Piloting",2:"Navigation",3:"Tactics",4:"",5:"",6:""},
         "cash" : {1 : "1000",2 : "5000",3 : "10000",4 : "10000",5 : "20000",6 : "50000",7 : "50000"},
         "benefits" : {1 : "Low Passage",2 : "+2 int",3 : "+1 edu",4 : "weapon",5 : "weapon",6 : "high passage",7 : "envoy club"},
     },
@@ -335,10 +335,10 @@ var jobs = {
             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"+1 edu",6:"+1 soc"},
             "Service Skills" : {1: "Zero-G",2: "Computer",3:"Loader",4:"Gunnery",5:"Melee Combat",6:"Gun Combat"},
             "Specialist" : {1 :"Gunnery", 2: "Mechanics", 3 : "Electronics", 4 : "Engineering", 5 : "Leadership", 6 : "Comms"},
-            "Advanced Education" : {1 :"Medicine", 2: "Navigation", 3 : "Engineering", 4 : "Computer", 5 : "Pilot", 6 : "Admin"}
+            "Advanced Education" : {1 :"Medicine", 2: "Navigation", 3 : "Engineering", 4 : "Computer", 5 : "Piloting", 6 : "Admin"}
         },
         "rank" : {0: "Private",1 : "PFC",2:"Corporal",3:"Sgt",4:"Staff Sgt",5:"Tech Sgt",6:"Master Sgt"},
-        "rankskills" : {0: "Zero-G",1 : "",2:"",3:"",4:"Tactics",5:"",6:""},
+        "rankskills" : {0: "Zero-G",1 : "Navigation",2:"Piloting",3:"",4:"Tactics",5:"Piloting",6:""},
         "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
         "benefits" : {1 : "Low Passage",2 : "+1 edu",3 : "Weapon",4 : "Mid Passage",5 : "+1 soc",6 : "High Passage",7 : "Explorers' Society"},
     },
@@ -354,10 +354,10 @@ var jobs = {
             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 str",5:"Melee Combat",6:"Zero-G"},
             "Service Skills" : {1: "Comms",2: "Bribery",3:"Gun Combat",4:"Loader",5:"Broker",6:"Vehicle"},
             "Specialist" : {1 :"Zero-G", 2: "Mechanics", 3 : "Loader", 4 : "Electronics", 5 : "Steward", 6 : "Navigation"},
-            "Advanced Education" : {1 :"Medicine", 2: "Computer", 3 : "Broker", 4 : "Pilot", 5 : "Navigation", 6 : "Engineering"}
+            "Advanced Education" : {1 :"Medicine", 2: "Computer", 3 : "Broker", 4 : "Piloting", 5 : "Navigation", 6 : "Engineering"}
         },
         "rank" : {0: "Crewman",1 : "4th Officer",2:"3rd Officer",3:"2nd Officer",4:"2nd Officer",5:"Captain",6:"Senior Captain"},
-        "rankskills" : {0: "Zero-G",1 : "",2:"",3:"Pilot",4:"",5:"Pilot",6:""},
+        "rankskills" : {0: "Zero-G",1 : "Navigation",2:"",3:"Piloting",4:"",5:"Piloting",6:""},
         "cash" : {1 : "500",2 : "1000",3 : "1000",4 : "5000",5 : "8000",6 : "10000",7 : "20000"},
         "benefits" : {1 : "Mid Passage",2 : "+1 edu",3 : "Weapon",4 : "High Passage",5 : "+1 int",6 : "High Passage",7 : "Star Envoy Club"},
     },
