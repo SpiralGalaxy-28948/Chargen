@@ -128,7 +128,7 @@ var jobs = {
         "skills": {
             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"Gambling",5:"Zero-G",6:"Melee Combat"},
             "Service Skills" : {1: "Zero-G",2: "Mining",3:"Loader",4:"Demolitions",5:"Comms",6:"Ground Vehicle"},
-            "Specialist" : {1 :"Streetwise", 2: "Electronic", 3 : "Ground Vehicle", 4 : "Mechanical", 5 : "Mining", 6 : "Admin"},
+            "Specialist" : {1 :"Streetwise", 2: "Electronic", 3 : "Ground Vehicle", 4 : "Mechanics", 5 : "Mining", 6 : "Admin"},
             "Advanced Education" : {1 :"Navigation", 2: "Medicine", 3 : "Electronics", 4 : "Computer", 5 : "Engineering", 6 : "Jack-of-All-Trades"}
         },
         "rank" : {0: "Gofer",1 : "Floorhand",2:"Asst Driller",3:"Driller",4:"Toolpusher",5:"Supervisor",6:"General Mgr"},
@@ -499,7 +499,7 @@ var jobs = {
             "Personal Development" : {1: "+1 str",2: "+1 dex",3:"+1 end",4:"+1 int",5:"Melee Combat",6:"Gun Combat"},
             "Service Skills" : {1: "Vehicle",2: "Electronics",3:"Mechanics",4:"Comms",5:"Zero-G",6:"Sciences"},
             "Specialist" : {1 :"Investigate", 2: "Vehicle", 3 : "Computer", 4 : "Security", 5 : "Engineering", 6 : "Jack-of-All-Trades"},
-            "Advanced Education" : {1 :"Mechanical", 2: "Computer", 3 : "Admin", 4 : "Electronics", 5 : "Engineering", 6 : "Jack-of-All-Trades"}
+            "Advanced Education" : {1 :"Mechanics", 2: "Computer", 3 : "Admin", 4 : "Electronics", 5 : "Engineering", 6 : "Jack-of-All-Trades"}
         },
         "rank" : {0: "Technician",1 : "Team Lead",2:"Supervisor",3:"Head of Department",4:"Director",5:"Vice-President",6:"Executive Officer"},
         "rankskills" : {0: "Electronics",1 : "Mechanics",2:"",3:"",4:"",5:"",6:""},
